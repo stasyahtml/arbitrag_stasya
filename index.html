@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Pushy is an off-canvas navigation menu for your website.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no">
+
+        <link rel="stylesheet" href="pushy-master/css/normalize.css">
+        <link rel="stylesheet" href="pushy-master/css/demo.css">
+
+        <link rel="stylesheet" href="pushy-master/css/pushy.css">
+        <link rel="stylesheet" type="text/css" href="index.css">
+
+        <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
+        <script src="js/site.js"></script>
+    </head>
+     <body>
+
+        <header class="site-header push">
+            <ul>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Пользователи</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Помощь</a></li>
+            </ul>
+            <span class="public_project">
+                + Опубликовать проект
+            </span>
+
+        </header>
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left">
+            <div class="logo">LeadLance</div>
+            <div class="logo">L</div>
+            <div class="profil">
+                <div class="photo">
+                    <img src="img/man.png"> 
+
+                    <span class="pro">pro</span>
+                    <img src="img/arr_pro_avatar.png" class="arr_pro_avatar"> 
+
+                    <div class="exit">
+                        <a href="#"><img src="img/exit.svg">
+                        <span>выйти</span></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="name">
+                        Константин
+                    </div>
+                    <div class="statistic">
+                        <a href="#"><img src="img/grow.svg"></a>325
+                        <a href="#"><img src="img/comment.png"></a>4
+                    </div>
+                </div>
+
+             </div>
+            <ul>
+                <li class="pushy-submenu">
+                    <a href="#">
+                        <img src="img/person.svg" class="icon">
+                        Профиль
+                    </a>
+                    <ul>
+                        <li class="pushy-link"><a href="#">Item 1</a></li>
+                        <li class="pushy-link"><a href="#">Item 2</a></li>
+                        <li class="pushy-link"><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <a href="#"><img src="img/project.svg">
+                        <span class="round1 round">2</span>
+                        Проекты</a>
+                    <ul>
+                        <li class="pushy-link"><a href="#">Item 1</a></li>
+                        <li class="pushy-link"><a href="#">Item 2</a></li>
+                        <li class="pushy-link"><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-submenu">
+                    <a href="#"><img src="img/order.png">
+                         <span class="round2 round">22</span>
+                         Заказы</a>
+                    <ul>
+                        <li class="pushy-link"><a href="#">Item 1</a></li>
+                        <li class="pushy-link"><a href="#">Item 2</a></li>
+                        <li class="pushy-link"><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li class="pushy-link">
+                    <a href="#"><img src="img/mail.svg">
+                        <span class="round3 round">22</span>
+                        Сообщения</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="#"><img src="img/schet.png">Счет</a>
+                </li>
+                <li class="pushy-link">
+                    <a href="#"><img src="img/params.png">Настройки</a>
+                </li>
+            </ul>
+            <div >
+                <div class="menu-btn">
+                    <img src="img/arrow.svg">
+                        Свернуть меню
+                </div>
+            </div>
+        </nav>
+
+        <!-- Site Overlay -->
+        <div class="site-overlay"></div>
+
+        <!-- Your Content -->
+        <div id="container">
+            <div class="projects">
+                <div class="proj">Проекты</div>
+                <div class="filt">
+                    <span>Фильтр по проектам</span>
+                    <span><img src="img/filter.svg">свернуть</span>
+                    
+                </div>
+
+            </div>
+
+            <form class="form1">
+                <div class="filters">
+                    <div class="nisha">
+                        <input type="text" placeholder="Ниша" class="input_filt">
+                        <ul>
+                            <li><a class="inet_shop">интернет-магазин<i class="ion-close-round"></i></a></li>
+                            <li><a class="social">социальные сети<i class="ion-close-round"></i></a></li>
+                            <li><a class="goods_send">товары почтой<i class="ion-close-round"></i></a></li>
+                            <li><a class="mobile_app">мобильное приложение<i class="ion-close-round"></i></a></li>
+                            <li><a class="online_games">онлайн игры<i class="ion-close-round"></i></a></li>
+                        </ul>
+                        <div class="filter_menu filt_men1">
+                            <ul>
+                                <li>
+                                   <input type="checkbox" id="check1">
+                                    <label for="check1">
+                                        <span></span>
+                                         <span>интернет-магазин</span></label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="check2">
+                                    <label for="check2">
+                                        <span></span>
+                                        <span>социальные сети</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check3">
+                                    <label for="check3">
+                                        <span></span>
+                                        <span>товары почтой</span></label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="check4">
+                                    <label for="check4">
+                                        <span></span>
+                                        <span>мобильное приложение</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check5">
+                                    <label for="check5">
+                                        <span></span>
+                                        <span>онлайн игры</span></label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="check6">
+                                    <label for="check6">
+                                        <span></span>
+                                        <span>знакомства</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check7">
+                                    <label for="check7">
+                                        <span></span>
+                                        <span>финансы и кредитование</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check8">
+                                    <label for="check8">
+                                        <span></span>
+                                        <span>софт</span></label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="check9">
+                                    <label for="check9">
+                                        <span></span>
+                                        <span>инфобизнес</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check10">
+                                    <label for="check10">
+                                        <span></span>
+                                        <span>услуги</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check11">
+                                    <label for="check11">
+                                        <span></span>
+                                        <span>веб-сервис</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check12">
+                                    <label for="check12">
+                                        <span></span>
+                                        <span>эротика</span></label>
+                                </li> 
+                            </ul>
+                            <ul>
+                                <li>выбрать все</li>
+                                <li>снять все галочки</span> </li>
+                            </ul>
+                            <div class="send">
+                                <input type="submit" value="Применить">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trafick">
+                        <input type="text" placeholder="Допустимый тип трафика" class="input_filt2">
+                        <ul>
+                            <li><a class="target">таргетированная реклама,<i class="ion-close-round"></i></a></li>
+                            <li><a class="social_group">группы в соц. сетях<i class="ion-close-round"></i></a></li>
+                            <li><a class="contex">контекстная реклама<i class="ion-close-round"></i></a></li>
+                        </ul>
+                        <div class="filter_menu filt_men2 ">
+                            <ul>
+                                <li>
+                                   <input type="checkbox" id="check13">
+                                    <label for="check13">
+                                        <span></span>
+                                         <span>интернет-магазин</span></label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="check14">
+                                    <label for="check14">
+                                        <span></span>
+                                        <span>социальные сети</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check15">
+                                    <label for="check15">
+                                        <span></span>
+                                        <span>товары почтой</span></label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="check16">
+                                    <label for="check16">
+                                        <span></span>
+                                        <span>мобильное приложение</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check17">
+                                    <label for="check17">
+                                        <span></span>
+                                        <span>онлайн игры</span></label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="check18">
+                                    <label for="check18">
+                                        <span></span>
+                                        <span>знакомства</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check19">
+                                    <label for="check19">
+                                        <span></span>
+                                        <span>финансы и кредитование</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check20">
+                                    <label for="check20">
+                                        <span></span>
+                                        <span>софт</span></label>
+                                </li>
+                                <li>
+                                   <input type="checkbox" id="check21">
+                                    <label for="check21">
+                                        <span></span>
+                                        <span>инфобизнес</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check22">
+                                    <label for="check22">
+                                        <span></span>
+                                        <span>услуги</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check23">
+                                    <label for="check23">
+                                        <span></span>
+                                        <span>веб-сервис</span></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="check24">
+                                    <label for="check24">
+                                        <span></span>
+                                        <span>эротика</span></label>
+                                </li> 
+                            </ul>
+                            <ul>
+                                <li>выбрать все</li>
+                                <li>снять все галочки</span> </li>
+                            </ul>
+                            <div class="send">
+                                <input type="submit" value="Применить">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search_words">
+                        <input type="search" placeholder="Поиск по ключевым словам">
+                        <ul>
+                            <li>
+                                <img src="img/fire.png">
+                               <input type="checkbox" id="check">
+                                <label for="check">
+                                    <span></span>
+                                    исключить срочные проекты
+                                </label> 
+                            </li>
+                            <li>
+                                <img src="img/two_black.svg">
+                                <input type="checkbox" id="check0">
+                                <label for="check0">
+                                    <span></span>
+                                    исключить мультипроекты
+                                </label> 
+                            </li>
+                        </ul>
+                        <div class="send">
+                            <div class="send_inside">
+                                <input type="submit" value="Применить">
+                            </div>
+                            <div class="clean">
+                                <a href="#">Очистить фильтр</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </form>
+
+            <div class="main">
+                <div class="left">
+                    <div class="buttons">
+                        <div class="main_buttons">
+                            <button>
+                                Все
+                            </button>
+                            <button>
+                                Мои
+                            </button>
+                            <button>
+                                На модерации
+                             </button>
+                        </div>
+                        <div class="sorting_buttons">
+                            <button>
+                                <img src="img/arrow_up_2.svg">
+                                <img src="img/arrow_down.svg">
+                            </button>
+                            <button>
+                                 <img src="img/arrow_down.svg">
+                                 <img src="img/arrow_up_2.svg">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="block hot">
+                        <div class="title">
+                            <div class="short_describ">
+                                Продажа уникальных футболок с авторским дизайном!
+                                <a href="#"><img src="img/two_black.svg"></a>
+                                <a href="#"><img src="img/fire.png"></a>
+                                <a href="#"><img src="img/add.svg"></a>
+                            </div>
+                             <div class="inform">
+                                <span class="auction">Аукцион</span> | <span>380 лид.</span> | <span>23 дня</span>
+                             </div>
+                        </div>
+                        <div class="main_describ">
+                            <div class="describtion">
+                                Нужно решить вопрос с возможностью выбора цвета и размера для виртумарта (версия 2.6.6). Исходные характеристики товара: артикул, цвет, размер. Артикул-общая характеристика товара (модель, узор,отделка). Цвет и размер-зависимые опции. Покупатель должен видеть реальный цвет товара (либо это вывод картинкию. Жду ваших предложений!
+                            </div>
+                            <p>
+                                Ниша: <a class="inet_shop">интернет-магазин,</a> <a class="mobile_app">мобильное приложение</a>
+                            </p>
+                            <p>
+                                Допустимый тип трафика: <a class="target">таргетированная реклама,</a> 
+                                <a class="social_group">группы в соц. сетях,</a> 
+                                <a class="contex">контекстная реклама.</a>
+                            </p>
+                            <div class="footer">
+                                <span>Опубликован: 38 минут назад</span> 
+                                <a href="#"><img src="img/eye.png"></a> 422
+                                <a href="#"><img src="img/eye.png"></a> 22
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="title">
+                            <div class="short_describ">
+                                Продажа уникальных футболок с авторским дизайном!
+                                <a href="#"><img src="img/fire.png"></a>
+                            </div>
+                             <div class="inform">
+                                <span>380 p.</span> | <span>380 лид.</span> | <span>23 дня</span>
+                             </div>
+                        </div>
+                        <div class="main_describ">
+                            <div class="describtion">
+                                Нужно решить вопрос с возможностью выбора цвета и размера для виртумарта (версия 2.6.6). Исходные характеристики товара: артикул, цвет, размер. Артикул-общая характеристика товара (модель, узор,отделка). Цвет и размер-зависимые опции. Покупатель должен видеть реальный цвет товара (либо это вывод картинкию. Жду ваших предложений!
+                            </div>
+                            <p>
+                                Ниша: <a class="inet_shop">интернет-магазин,</a> <a class="mobile_app">мобильное приложение</a>
+                            </p>
+                            <p>
+                                Допустимый тип трафика: <span class="target">таргетированная реклама,</sa> 
+                                <a class="social_group">группы в соц. сетях,</a> 
+                                <a class="contex">контекстная реклама.</a>
+                            </p>
+                            <div class="footer">
+                                <span>Опубликован: 38 минут назад</span> a
+                                <a href="#"><img src="img/eye.png"></a> 422
+                                <a href="#"><img src="img/eye.png"></a> 22
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="title">
+                            <div class="short_describ">
+                                Продажа уникальных футболок с авторским дизайном!
+                            </div>
+                             <div class="inform">
+                                <span class="auction">Аукцион</span> | <span>380 лид.</span> | <span>23 дня</span>
+                             </div>
+                        </div>
+                        <div class="main_describ">
+                            <div class="describtion">
+                                Нужно решить вопрос с возможностью выбора цвета и размера для виртумарта (версия 2.6.6). Исходные характеристики товара: артикул, цвет, размер. Артикул-общая характеристика товара (модель, узор,отделка). Цвет и размер-зависимые опции. Покупатель должен видеть реальный цвет товара (либо это вывод картинкию. Жду ваших предложений!
+                            </div>
+                            <p>
+                                Ниша: <a class="inet_shop">интернет-магазин,</a> <a class="mobile_app">мобильное приложение</a>
+                            </p>
+                            <p>
+                                Допустимый тип трафика: <aclass="target">таргетированная реклама,</a> 
+                                <a class="social_group">группы в соц. сетях,</span> 
+                                <a class="contex">контекстная реклама.</span>
+                            </p>
+                            <div class="footer">
+                                <span>Опубликован: 38 минут назад</span> 
+                                <a href="#"><img src="img/eye.png"></a> 422
+                                <a href="#"><img src="img/eye.png"></a> 22
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="title">
+                            <div class="short_describ">
+                                Продажа уникальных футболок с авторским дизайном!
+                            </div>
+                             <div class="inform">
+                                <span>380 p.</span> | <span>380 лид.</span> | <span>23 дня</span>
+                             </div>
+                        </div>
+                        <div class="main_describ">
+                            <div class="describtion">
+                                Нужно решить вопрос с возможностью выбора цвета и размера для виртумарта (версия 2.6.6). Исходные характеристики товара: артикул, цвет, размер. Артикул-общая характеристика товара (модель, узор,отделка). Цвет и размер-зависимые опции. Покупатель должен видеть реальный цвет товара (либо это вывод картинкию. Жду ваших предложений!
+                            </div>
+                            <p>
+                                Ниша: <a class="inet_shop">интернет-магазин,</a> <a class="mobile_app">мобильное приложение</a>
+                            </p>
+                            <p>
+                                Допустимый тип трафика: <a class="target">таргетированная реклама,</a> 
+                                <a class="social_group">группы в соц. сетях,</a> 
+                                <a class="contex">контекстная реклама.</a>
+                            </p>
+                            <div class="footer">
+                                <span>Опубликован: 38 минут назад</span> 
+                                <a href="#"><img src="img/eye.png"></a> 422
+                                <a href="#"><img src="img/eye.png"></a> 22
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block ">
+                        <div class="title">
+                            <div class="short_describ">
+                                Продажа уникальных футболок с авторским дизайном!
+                                <a href="#"><img src="img/two_black.svg"></a>
+                                <a href="#"><img src="img/fire.png"></a>
+                            </div>
+                             <div class="inform">
+                                <span>380 p.</span> | <span>380 лид.</span> | <span>23 дня</span>
+                             </div>
+                        </div>
+                        <div class="main_describ">
+                            <div class="describtion">
+                                Нужно решить вопрос с возможностью выбора цвета и размера для виртумарта (версия 2.6.6). Исходные характеристики товара: артикул, цвет, размер. Артикул-общая характеристика товара (модель, узор,отделка). Цвет и размер-зависимые опции. Покупатель должен видеть реальный цвет товара (либо это вывод картинкию. Жду ваших предложений!
+                            </div>
+                            <p>
+                                Ниша: <a class="inet_shop">интернет-магазин,</a> <a class="mobile_app">мобильное приложение</a>
+                            </p>
+                            <p>
+                                Допустимый тип трафика: <span class="target">таргетированная реклама,</span> 
+                                <a class="social_group">группы в соц. сетях,</a> 
+                                <a class="contex">контекстная реклама.</a>
+                            </p>
+                            <div class="footer">
+                                <span>Опубликован: 38 минут назад</span> 
+                                <a href="#"><img src="img/eye.png"></a> 422
+                                <a href="#"><img src="img/eye.png"></a> 22
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pages">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                        <a href="#" class="next">
+                            <span>cледующая</span>
+                            <img src="img/long_arrow_right.svg">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="right">
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                </div>
+            </div>
+
+            <div class="top_arrow">
+                <a href="#">
+                    <div class="icon">
+                        <img src="img/long_up_arrow.png" alt="">
+                    </div> 
+                    наверх
+                </a>
+            </div>
+            <div class="footer_menu">
+                <ul>
+                    <li>Полезное</li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Пользователи</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Помощь</a></li>
+                </ul>
+
+                <ul>
+                    <li>Мой профиль</li>
+                    <li><a href="#">Профиль</a><li>
+                    <li><a href="#">Сообщения</a></li>
+                    <li><a href="#">Счет</a></li>
+                    <li><a href="#">Настройки</a></li>
+                    <li><a href="#">Выйти</a></li>
+                </ul>
+
+                <ul>
+                    <li>Платные услуги</li>
+                    <li><a href="#">Профиль</a></li>
+                    <li><a href="#">Сообщения</a></li>
+                    <li><a href="#">Аккаунт PRO</a></li>
+                </ul>
+
+                <ul>
+                    <li>Найти работу</li>
+                    <li><a href="#">Поиск</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Настройки</a></li>
+                </ul>
+                <ul>
+                    <li>Мы в соц. сетях</li>
+                     <li>
+                        <a href="#"><img src="img/tw.png"></a>
+                        <a href="#"><img src="img/in.png"></a>
+                        <a href="#"><img src="img/google.png"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/fb.png"></a>
+                        <a href="#"><img src="img/vk.png"></a>
+                    </li>
+                    <li><img src="img/leadlance2016.png"></li>
+                </ul>
+            </div>
+
+        </div>
+
+     <!--    <footer class="site-footer push">
+        </footer> -->
+            
+        <!-- Pushy JS -->
+        <script src="pushy-master/js/pushy.min.js"></script>
+
+    </body>
+</html>
+   
